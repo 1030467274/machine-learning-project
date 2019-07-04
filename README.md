@@ -8,7 +8,7 @@
 
 2. 组员：王一茗 794291997 邓超元 1030467274 金谡 jinsu0106
 
-3. 项目地址：https://github.com/gulouguawen/machine-learning-project
+3. 项目地址：https://github.com/1030467274/machine-learning-project
 
 > 用到的第三方库    
    - NumPy  :conda install numpy
