@@ -16,7 +16,7 @@ create table db_ml.test
 -- λ mysql -u root -p --local-infile db_ml
 
 # load data local infile 'D:\\PycharmProjects\\project-0610\\machine_learning_project\\data\\test_Aug.csv'
-load data local infile '/Users/mingfei/PycharmProjects/project-0610/machine_learning_project/data/test_Aug.csv'
+load data local infile '/Users/pc/PycharmProjects/machine-learning-project/data/test_Aug.csv'
 into table db_ml.test
 fields terminated by ','
 # lines terminated by '\n'

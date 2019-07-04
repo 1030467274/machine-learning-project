@@ -1,5 +1,7 @@
 
-
+show databases;
+use db_ml;
+show tables ;
 drop database if exists db_ml;
 create database db_ml;
 
@@ -70,8 +72,7 @@ create table db_ml.poi
   comment '公共设施表';
 
 select *
-from db_ml.train
-limit 0, 3;
+from db_ml.train;
 
 select *
 from db_ml.weather;
@@ -81,16 +82,16 @@ from db_ml.poi;
 
 -- λ mysql -u root -p --local-infile db_ml
 
-# load data local infile 'D:\\PycharmProjects\\project-0610\\machine_learning_project\\data\\train_July.csv'
-load data local infile '/Users/mingfei/PycharmProjects/project-0610/machine_learning_project/data/train_July.csv'
+# load data local infile 'C:\Users\pc\PycharmProjects\machine-learning-project\data'
+load data local infile 'C://Users//pc//PycharmProjects//machine-learning-project//data/train_July.csv'
 into table db_ml.train
 fields terminated by ','
 lines terminated by '\r\n'
 ignore 1 lines;
 # [2019-07-03 22:24:41] 892514 rows affected in 1 m 31 s 692 ms
 
-#   load data local infile 'D:\\PycharmProjects\\project-0610\\machine_learning_project\\data\\weather.csv'
-load data local infile '/Users/mingfei/PycharmProjects/project-0610/machine_learning_project/data/weather.csv'
+#   load data local infile 'C:\Users\pc\PycharmProjects\machine-learning-project\data'
+load data local infile 'C://Users//pc//PycharmProjects//machine-learning-project//data/weather.csv'
 into table db_ml.weather
 fields terminated by ','
 lines terminated by '\r\n'
@@ -102,8 +103,8 @@ ignore 1 lines
 # [2019-07-03 22:25:56] [01000][1265] Data truncated for column 'visibility' at row 575
 # [2019-07-03 22:28:19] 1775 rows affected in 56 ms
 
-#   load data local infile 'D:\\PycharmProjects\\project-0610\\machine_learning_project\\data\\poi.csv'
-load data local infile '/Users/mingfei/PycharmProjects/project-0610/machine_learning_project/data/poi.csv'
+#   load data local infile C:\Users\pc\PycharmProjects\machine-learning-project\data'
+load data local infile '//Users//pc//PycharmProjects//machine-learning-project//data//poi.csv'
 into table db_ml.poi
 fields terminated by ','
 lines terminated by '\r\n'

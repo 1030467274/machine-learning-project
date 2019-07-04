@@ -13,7 +13,7 @@ numpy.set_printoptions(threshold=sys.maxsize)
 def get_connection():
     connection = pymysql.connect(
         user='root',
-        password='system'
+        password='dcy5195566'
     )
     return connection
 
