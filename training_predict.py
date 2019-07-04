@@ -15,7 +15,6 @@ def get_connection():
         user='root',
         password='system'
     )
-
     return connection
 
 
